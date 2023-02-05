@@ -1,0 +1,90 @@
+:root{
+    --origin : window.innerWidth - window.innerWidth/3;
+}
+.navbar{
+width : px;
+}
+.intro-content{
+    position : absolute;
+}
+.home-pic{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover{
+    background-image: linear-gradient(to bottom,#f5f7f638,rgb(255, 255, 255));
+    position : absolute
+}
+
+.art-piece{
+    position: relative;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    from {left: 1000px;}
+    to {left: 0px;}
+  }
+.content2-conver{
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 50%;  
+  } 
+.content2-conver::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #30312d 0%, #5d5f5f 100% );
+    transform: translate3d(0px, 20px, 0) scale(0.95);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+.content2-conver::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+
+
+#box {
+    background-color: rgba(40, 40, 190, 1);
+    border: 4px solid rgb(20, 20, 120);
+    transition: background-color 1s, border 1s;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .vertical {
+    color: white;
+    font: 32px "Arial";
+  }
+  
+  .extra {
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    border: 4px solid rgb(20, 20, 120);
+    text-align: center;
+    padding: 20px;
+  }
+  
+        
